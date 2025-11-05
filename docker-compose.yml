@@ -410,7 +410,7 @@ services:
   # Comment out everything below this point if you are using an external Postgres database
   db:
     # container_name: supabase-db
-    image: supabase/postgres:17.6.1.011
+    image: supabase/postgres:15.14.1.038      # included "timescaledb" extension: https://github.com/supabase/postgres/tree/develop?tab=readme-ov-file#postgresql-15-extensions
     restart: unless-stopped
     volumes:
       - ./volumes/db/realtime.sql:/docker-entrypoint-initdb.d/migrations/99-realtime.sql:Z
