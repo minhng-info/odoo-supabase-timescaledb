@@ -4,22 +4,22 @@ Odoo integration with Supabase's full feature set (Table/SQL editor, database ma
 
 ## Quick Installation
 
-Install [docker](https://docs.docker.com/get-docker/) and [docker-compose](https://docs.docker.com/compose/install/) yourself, then run the following to set up first **Odoo-Supabase** instance @ `localhost:10019` (default credential: admin / admin | master password: minhng.info) and `localhost:8000` (default credential: supabase / minhng.info):
+Install [docker](https://docs.docker.com/get-docker/) and [docker-compose](https://docs.docker.com/compose/install/) yourself, then run the following to set up first **Odoo-Supabase-TimescaleDB** instance @ `localhost:10019` (default credential: admin / admin | master password: minhng.info) and `localhost:8000` (default credential: supabase / minhng.info):
 
 ``` bash
-# Default setup in target directory "odoo-supabase"
+# Default setup in target directory "odoo-supabase-timescaledb"
 # Require available ports: 10019, 20019, 8000
-curl -s https://raw.githubusercontent.com/minhng92/odoo-supabase/master/run.sh | bash
+curl -s https://raw.githubusercontent.com/minhminhng-info/odoo-supabase-timescaledb/master/run.sh | bash
 ```
 
 or run the following to set up **Odoo-Supabase** instance at specific ports @ `localhost:11019` and `localhost:9000`:
 
 ``` bash
-curl -s https://raw.githubusercontent.com/minhng92/odoo-supabase/master/run.sh | bash -s odoo-supabase 11019 21019 9000
+curl -s https://raw.githubusercontent.com/minhng-info/odoo-supabase-timescaledb/master/run.sh | bash -s odoo-supabase-timescaledb 11019 21019 9000
 ```
 
 Some arguments:
-* First argument (**odoo-supabase**): Target folder to deploy
+* First argument (**odoo-supabase-timescaledb**): Target folder to deploy
 * Second argument (**11019**): Odoo port
 * Third argument (**21019**): Odoo live chat port
 * Fourth argument (**9000**): Supabase Studio dashboard port
@@ -35,8 +35,8 @@ $ sudo yum install curl
 ## Usage
 
 ```bash
-git clone git@github.com:minhng92/odoo-supabase.git
-cd odoo-supabase
+git clone git@github.com:minhng-info/odoo-supabase-timescaledb.git
+cd odoo-supabase-timescaledb
 docker-compose up -d
 ```
 

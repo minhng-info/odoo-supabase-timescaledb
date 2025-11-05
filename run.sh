@@ -1,11 +1,11 @@
 #!/bin/bash
-DESTINATION=${1:-odoo-supabase}
+DESTINATION=${1:-odoo-supabase-timescaledb}
 ODOO_PORT=${2:-10019}
 ODOO_CHAT=${3:-20019}
 DASHBOARD_PORT=${4:-8000}
 
 # Clone Odoo-Supabase directory
-git clone --depth=1 https://github.com/minhng92/odoo-supabase $DESTINATION
+git clone --depth=1 https://github.com/minhng-info/odoo-supabase-timescaledb $DESTINATION
 rm -rf $DESTINATION/.git
 
 # Create PostgreSQL directory
