@@ -1,6 +1,6 @@
-# Odoo × Supabase
+# Odoo × Supabase × TimescaleDB
 
-Odoo integration with Supabase's full feature set (Table/SQL editor, database management).
+Odoo integration with Supabase's full feature set (Table/SQL editor, database management) and TimescaleDB extension for time-series data.
 
 ## Quick Installation
 
@@ -9,7 +9,7 @@ Install [docker](https://docs.docker.com/get-docker/) and [docker-compose](https
 ``` bash
 # Default setup in target directory "odoo-supabase-timescaledb"
 # Require available ports: 10019, 20019, 8000
-curl -s https://raw.githubusercontent.com/minhminhng-info/odoo-supabase-timescaledb/master/run.sh | bash
+curl -s https://raw.githubusercontent.com/minhng-info/odoo-supabase-timescaledb/master/run.sh | bash
 ```
 
 or run the following to set up **Odoo-Supabase** instance at specific ports @ `localhost:11019` and `localhost:9000`:
@@ -60,6 +60,10 @@ docker-compose up -d
 
 <p>
 <img src="/screenshots/odoo-19-apps-screenshot.jpg" width="100%">
+</p>
+
+<p>
+<img src="/screenshots/timescaledb_extension.jpg" width="100%">
 </p>
 
 <p>
